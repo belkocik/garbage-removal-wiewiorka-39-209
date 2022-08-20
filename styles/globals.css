@@ -1,0 +1,18 @@
+/* react-calendar lib start */
+.react-calendar {
+  background-color: #f7fafc !important;
+}
+.react-calendar__tile--active {
+  background-color: #4fd1c5 !important;
+}
+
+.react-calendar abbr,
+span {
+  color: black;
+}
+
+.react-calendar__navigation button {
+  color: black;
+}
+
+/* react-calendar lib end */
