@@ -87,7 +87,7 @@ const Hero = () => {
           overflow="hidden"
         >
           <Image
-            alt="Hero Image"
+            alt="Wiewiórka"
             objectFit="cover"
             w="100%"
             h="100%"

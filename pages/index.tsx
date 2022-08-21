@@ -6,7 +6,7 @@ import Hero from "@/components/hero";
 const Home: NextPage = () => {
   return (
     <PageLayout
-      title="Wiewiórka 39-209 | Aktualności | Wywóz śmieci"
+      title="Miejscowość Wiewiórka 39-209 | Aktualności | Harmonogram wywozu odpadów w gminie Żyraków"
       description="Wiewiórka – wieś w Polsce, położona w województwie podkarpackim, w powiecie dębickim, w gminie Żyraków"
     >
       <Hero />

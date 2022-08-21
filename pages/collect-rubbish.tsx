@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import PageLayout from "@/components/page-layout";
-import { Box, Grid, Flex, Heading } from "@chakra-ui/react";
+import { Box, Grid, Flex, Heading, Text, Spacer } from "@chakra-ui/react";
 import { GetServerSideProps } from "next";
 import AddToCalendar from "@/components/add-to-calendar";
 import { MixedRubbish } from "@/types/mixed-rubbish";
@@ -25,24 +25,41 @@ const CollectRubish: NextPage = ({
 }: {
   mixedRubbish: MixedRubbish[];
 }) => {
-  console.log(mixedRubbish);
   return (
     <PageLayout
-      title="Wiewiórka 39-209 | Wywóz śmieci"
-      description="System Śmieciowy - Wiewiórka/Gmina Żyraków"
+      title="Wiewiórka 39-209 | Harmonogram wywozu odpadów komunalnych w roku 2022 gmina Żyraków"
+      description="System Śmieciowy | Wywóz śmieci - Wiewiórka, Góra Motyczna, Mokre, Straszęcin, Wola Wielka i Zasów - Gmina Żyraków"
     >
-      <Heading as="h1" mb={4}>
-        Wiewiórka 39-209 - Wywóz śmieci
-      </Heading>
+      <Box textAlign="center">
+        <Heading as="h1" mb={4}>
+          Harmonogram wywozu odpadów komunalnych w roku 2022 gmina Żyraków
+        </Heading>
+        <Heading as="h2" mb={4} fontSize="2xl">
+          Wiewiórka, Góra Motyczna, Mokre, Straszęcin, Wola Wielka i Zasów
+        </Heading>
+      </Box>
 
-      <Heading as="h2" fontSize="xl" p={2}>
-        Legenda kalendarza
-      </Heading>
-      <Flex align="center">
-        <Box p="4" m={2} bg="teal.300" color="black" fontWeight={500}>
-          Dzień odbioru
-        </Box>
-      </Flex>
+      <Box textAlign="center" bg="#F7FAFC" p={6} rounded="xl">
+        <Heading as="h3" fontSize="xl" p={2} color="black">
+          Legenda kalendarza
+        </Heading>
+
+        <Flex minWidth="max-content" alignItems="center" direction="column">
+          <Text p="4" m={2} bg="teal.300" color="black" fontWeight={500}>
+            Dzień odbioru
+          </Text>
+          <Spacer />
+          <Box width="400px">
+            <Heading as="h3" fontSize="xl" p={2} color="black">
+              Informacje
+            </Heading>
+            <Text fontSize="xl" bg="red.400" p={2} rounded="lg" color="black">
+              Popiół zbierany będzie w miesiącach - styczeń, luty, marzec,
+              kwiecień, październik, listopad, grudzień
+            </Text>
+          </Box>
+        </Flex>
+      </Box>
       <Grid
         templateColumns={{
           base: "repeat(1, 1fr)",

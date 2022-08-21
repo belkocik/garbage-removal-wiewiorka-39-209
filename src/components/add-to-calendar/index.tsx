@@ -1,7 +1,16 @@
 import "add-to-calendar-button/assets/css/atcb.css";
 import { atcb_action } from "add-to-calendar-button";
 import { IoCalendarOutline, IoTrash, IoTrashOutline } from "react-icons/io5";
-import { Box, Button, Text, useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Text,
+  useColorModeValue,
+  VStack,
+  Stack,
+  Flex,
+  Center,
+} from "@chakra-ui/react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 
@@ -18,19 +27,31 @@ const AddToCalendar = ({
   const iconColor = useColorModeValue("white", "black");
   return (
     <Box bg="gray.50" p={4} rounded="lg" h="100%">
-      <Text p={2} align="center" color="black" fontWeight={500} fontSize="xl">
-        <Box align="center">
-          {description === "Odpady segregowane" ? (
-            <Text color="#9CAD60">
+      <Box p={2} color="black" fontWeight={500} fontSize="xl">
+        {description === "Odpady segregowane" ? (
+          <Box>
+            <Flex
+              direction="column"
+              color="#9CAD60"
+              align="center"
+              textAlign="center"
+            >
               {description} <IoTrash size="32px" />
-            </Text>
-          ) : (
-            <Text color="black">
+            </Flex>
+          </Box>
+        ) : (
+          <Box>
+            <Flex
+              direction="column"
+              color="black"
+              align="center"
+              textAlign="center"
+            >
               {description} <IoTrashOutline size="32px" />
-            </Text>
-          )}
-        </Box>
-      </Text>
+            </Flex>
+          </Box>
+        )}
+      </Box>
 
       <Calendar
         value={
