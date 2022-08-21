@@ -1,6 +1,6 @@
 # ✨Garbage Removal calendar ⚛️
 
-![alt text](https://marcin-niedbalec.vercel.app/_next/image?url=https%3A%2F%2Fmedia.graphassets.com%2FAeVJYE88Tuys3wa4vOcy&w=1920&q=75)
+![alt text](https://marcin-niedbalec.vercel.app/_next/image?url=https%3A%2F%2Fmedia.graphassets.com%2FMYNrHLCTdySHlJHqA4dT&w=1920&q=75)
 
 What I used to create this project?
 
